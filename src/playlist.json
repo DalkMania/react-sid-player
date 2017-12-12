@@ -1,0 +1,93 @@
+[
+    {
+      "id": 0,
+      "title": "Central Park Loader",
+      "length": "00:04:29",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 0
+    },
+    {
+      "id": 1,
+      "title": "Central Park",
+      "length": "00:05:40",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 1
+    },
+    {
+      "id": 2,
+      "title": "The Street Loader",
+      "length": "00:05:06",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 2
+    },
+    {
+      "id": 3,
+      "title": "The Street",
+      "length": "00:05:34",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 3
+    },
+    {
+      "id": 4,
+      "title": "The Sewers Loader",
+      "length": "00:03:59",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 4
+    },
+    {
+      "id": 5,
+      "title": "The Sewers",
+      "length": "00:06:10",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 5
+    },
+    {
+      "id": 6,
+      "title": "The Basement Loader",
+      "length": "00:03:48",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 6
+    },
+    {
+      "id": 7,
+      "title": "The Basement",
+      "length": "00:05:05",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 7
+    },
+    {
+      "id": 8,
+      "title": "The Office Loader",
+      "length": "00:03:49",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 8
+    },
+    {
+      "id": 9,
+      "title": "The Office",
+      "length": "00:04:38",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 9
+    },
+    {
+      "id": 10,
+      "title": "The Mansion Loader",
+      "length": "00:06:17",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 10
+    },
+    {
+      "id": 11,
+      "title": "The Mansion",
+      "length": "00:07:55",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 11
+    },
+    {
+      "id": 12,
+      "title": "The Final Battle Loader",
+      "length": "00:03:33",
+      "file": "/assets/sids/Last_Ninja_2.sid",
+      "subtune": 12
+    }
+]
