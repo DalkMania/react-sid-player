@@ -12,4 +12,6 @@ The music in the demo is from one of my favorite C64 games, "The Last Ninja 2", 
 
 Feel free to Clone/Fork this project and make it your own.
 
+# Demo
+Check out the demo here: [Demo](http://demo.niklasdahlqvist.com/react-sid-player/).
 
