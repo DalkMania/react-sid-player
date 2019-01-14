@@ -1,5 +1,4 @@
 # React SID Player
-=====================
 
 A simple HTML5 C64 SID Player built with ReactJS, Redux, and CSS3. With the help of Create-React-App. This was a learning exercise for me to get into and play around with React and Redux.
 
