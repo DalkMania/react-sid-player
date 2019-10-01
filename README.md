@@ -7,7 +7,7 @@ SID (short for Sound Interface Device) is the name of the sound chip used in the
 The design of the player was designed by: Drew Vosburg, and can be found here:
 [http://codepen.io/drewvosburg/pen/YyvwJY](http://codepen.io/drewvosburg/pen/YyvwJY). The jsSID ( JavaScript SID Emulator ) used was created by: [Mihaly Horvath](http://hermit.sidrip.com).
 
-The music in the demo is from one of my favorite C64 games, "The Last Ninja 2", created by: [System 3](http://www.system3.com) back in 1988. The lovely chiptunes were composed by: [Matt Gray](https://www.facebook.com/MattGrayC64).
+The music in the demo is from one of my favorite C64 game series, "The Last Ninja", created by: [System 3](http://www.system3.com) back in the late 1980 - 1990s. 
 
 Feel free to Clone/Fork this project and make it your own.
 

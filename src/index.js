@@ -1,26 +1,15 @@
-import React from 'react'
+import React from 'react';
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { ConnectedRouter } from 'react-router-redux'
-import WebFont from 'webfontloader'
+import { ConnectedRouter } from 'connected-react-router'
 import store, { history } from './store'
-import App from './containers/app'
+import App from './components/App'
 import 'normalize.css'
-import 'font-awesome/css/font-awesome.min.css'
-import './index.css'
-
-WebFont.load({
-  google: {
-    families: ['Lato:300', 'sans-serif']
-  }
-})
 
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
-        <App />
-      </div>
+      <App />
     </ConnectedRouter>
   </Provider>,
   document.querySelector('#root')

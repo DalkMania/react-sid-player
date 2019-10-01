@@ -12,45 +12,46 @@ stopTimer,
 pauseTimer,
 resumeTimer,
 tick,
-getFileInfo
-} from '../../modules/player'
+getFileInfo,
+getPlaylistItem
+} from '../../actions/player'
+import { ReactComponent as PlayButton } from '../../assets/svg/play-solid.svg'
+import { ReactComponent as PauseButton } from '../../assets/svg/pause-solid.svg'
+import { ReactComponent as Forward } from '../../assets/svg/step-forward-solid.svg'
+import { ReactComponent as Backward } from '../../assets/svg/step-backward-solid.svg'
+import { ReactComponent as Bars } from '../../assets/svg/bars-solid.svg'
 
-import PlayList from '../playlist'
-import './style.css'
+import PlayList from '../Playlist'
+import '../../assets/css/player.css'
 
 
 class Player extends Component {
 
-  componentWillMount = () => {
-    window.setupSIDPlayer()
-    window.SIDplayer.loadinit( process.env.PUBLIC_URL + this.props.active.file, 0)
-  }
-
   componentDidMount = () => {
-    let playButton = document.getElementById('playpause')
-    playButton.addEventListener('click', this.toggle.bind(this))
-    window.addEventListener('load', this.handleLoad.bind(this))
+    window.setupSIDPlayer()
+    this.getPlayItem()
+    window.SIDplayer.loadinit( process.env.PUBLIC_URL + this.props.soundtrack.file, 0)
   }
 
-  componentWillReceiveProps = ( nextProps ) => {
+  UNSAFE_componentWillUpdate = ( nextProps ) => {
     if(nextProps.playing !== this.props.playing && this.props.playing === false && this.props.currentSongTime === 0 && nextProps.current === this.props.current) {
-      this.loadSid(this.props.active.file, this.props.current)
+      this.loadSid(this.props.soundtrack.file, this.props.subtune)
       setTimeout(() => {
         let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
         this.props.getFileInfo( fileInfo )
       }, 100)
-      this.start(this.props.current)
+      this.start(this.props.subtune)
       this.props.startTimer()
     }
 
     if(nextProps.playing !== this.props.playing && this.props.playing === false && this.props.currentSongTime === 0 && nextProps.current === !this.props.current) {
       this.stop()
-      this.loadSid(nextProps.active.file, nextProps.current)
+      this.loadSid(nextProps.soundtrack.file, nextProps.subtune)
       setTimeout(() => {
         let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
         this.props.getFileInfo( fileInfo )
       }, 100)
-      this.start(nextProps.current)
+      this.start(nextProps.subtune)
       this.props.startTimer()
 
     }
@@ -67,36 +68,31 @@ class Player extends Component {
 
     if(nextProps.current !== this.props.current && nextProps.currentSongTime === 0) {
       this.stop()
-      this.loadSid(nextProps.active.file, nextProps.current)
+      this.loadSid(nextProps.soundtrack.file, nextProps.subtune)
       setTimeout(() => {
         let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
         this.props.getFileInfo( fileInfo )
       }, 100)
-      this.start(nextProps.current)
+      this.start(nextProps.subtune)
       this.props.startTimer()
     }
 
     if(nextProps.currentSongTotalTime === this.props.currentSongTime) {
       this.stop()
       this.props.playNextSong()
+      this.props.startTimer()
     }
-  }
-
-  handleLoad = () => {
-    let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
-    this.props.getFileInfo( fileInfo )
   }
 
   componentWillUnmount = () => {
     this.stop()
     this.props.stopTimer()
-    let playButton = document.getElementById('playpause')
-    playButton.removeEventListener('click', this.toggle)
-    window.removeEventListener('load', this.handleLoad)
+    this.props.getFileInfo( {} )
+    window.SIDplayer = null
   }
 
-  play = ( subtune ) => {
-    window.SIDplayer.playcont( subtune )
+  play = () => {
+    window.SIDplayer.playcont()
   }
 
   loadSid = ( path, subtune ) => {
@@ -115,37 +111,47 @@ class Player extends Component {
     window.SIDplayer.start( subtune )
   }
 
-  toggle = () => {
-    if( this.props.playing === true ) {
-      this.pause()
-    } else {
-      this.play()
-    }
-  }
-
   getSIDTitle = () => {
-    return window.SIDplayer.gettitle()
+    return window.SIDplayer.gettitle().replace(/\0/g, '');
   }
 
   getSIDAuthor = () => {
-    return window.SIDplayer.getauthor()
+    return window.SIDplayer.getauthor().replace(/\0/g, '');
   }
 
   getSIDInfo = () => {
-    return window.SIDplayer.getinfo()
+    return window.SIDplayer.getinfo().replace(/\0/g, '');
+  }
+
+  getSidInfo = () => {
+    setTimeout(() => {
+      let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
+      this.props.getFileInfo( fileInfo )
+    }, 100)
+  }
+
+  getPlayItem = () => {
+    this.props.getPlaylistItem( this.props.match.params.id )
+  }
+
+  playOrPause = () => {
+    if(!this.props.playing) {
+      return <PlayButton />
+    } else {
+      return <PauseButton />
+    }
   }
 
   render() {
-    const { playing, playlistOpen } = this.props
+    const { playlistOpen } = this.props
     let playerClass = classnames({'show': playlistOpen}, {'hidden': !playlistOpen})
-    let playPauseClass = classnames('fa', {'fa-pause': playing}, {'fa-play': !playing})
     return (
       <div className="player-container">
         <div id="player" className={ playerClass }>
-          <div id="main">
+          <div id="main" style={{ backgroundImage: 'url(' + this.props.soundtrack.poster + ')' }}>
             <div>
               <div className="playback_controls">
-                <h2 id="title">{ this.props.fileInfo.SidTitle } - { this.props.active.title }</h2>
+                <h2 id="title">{ this.props.soundtrack.album } - { this.props.active.title }</h2>
                 <h3 id="artist">{ this.props.fileInfo.SidAuthor } - { this.props.fileInfo.SidInfomation }</h3>
                 <div className="time-holder">
                   <div className="slider">
@@ -153,18 +159,18 @@ class Player extends Component {
                   </div>
                 </div>
                 <div>
-                  <i onClick={ this.props.showPlayList } className="fa fa-bars menu"></i>
+                  <i onClick={ this.props.showPlayList } className="fa fa-bars menu"><Bars /></i>
                   <div className="buttons">
-                    <i onClick={this.props.playPrevSong} className="fa fa-step-backward" id="back"></i>
-                    <i onClick={this.props.togglePlaying} className={ playPauseClass } id="playpause"></i>
-                    <i onClick={this.props.playNextSong} className="fa fa-step-forward" id="next"></i>
+                    <i onClick={this.props.playPrevSong} id="back"><Backward /></i>
+                    <i onClick={this.props.togglePlaying} id="playpause">{this.playOrPause()}</i>
+                    <i onClick={this.props.playNextSong} id="next"><Forward /></i>
                   </div>
                 </div>
               </div>
               <audio id="playbar" controls></audio>
             </div>
           </div>
-            <PlayList songs={ this.props.songs } current={ this.props.active.id } />
+            <PlayList active={this.props.match.params.id} songs={ this.props.songs } current={ this.props.active.id } />
         </div>
       </div>
 
@@ -175,8 +181,11 @@ class Player extends Component {
 const mapStateToProps = (state) => {
   return {
       fileInfo: state.player.fileInfo,
+      soundtracks: state.player.soundtracks,
+      soundtrack: state.player.soundtrack,
       active: state.player.active,
       current: state.player.current,
+      subtune: state.player.subtune,
       currentSongTime: state.player.currentSongTime,
       currentSongProgress: state.player.currentSongProgress,
       currentSongTotalTime: state.player.currentSongTotalTime,
@@ -184,8 +193,7 @@ const mapStateToProps = (state) => {
       pause: state.player.pause,
       playlistOpen: state.player.playlistOpen,
       songs: state.player.songs,
-      loaded: state.player.loaded,
-      currentPage: state.player.currentPage
+      loaded: state.player.loaded
   }
 }
 
@@ -200,6 +208,7 @@ const mapDispatchToProps = dispatch => bindActionCreators({
   resumeTimer,
   tick,
   getFileInfo,
+  getPlaylistItem
 }, dispatch)
 
 export default connect(
