@@ -203,7 +203,7 @@ class Player extends Component {
     return (
       <div className="player-container">
         <div id="player" className={ playerClass }>
-          <div id="main" style={{ backgroundImage: 'url(' + this.props.soundtrack.poster + ')' }}>
+          <div id="main" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + this.props.soundtrack.poster})` }}>
             <div>
               <div className="playback_controls">
                 <h2 id="title">{ this.props.soundtrack.album } - { this.props.active.title }</h2>
