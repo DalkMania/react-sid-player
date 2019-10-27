@@ -33,8 +33,41 @@ class Player extends Component {
     window.SIDplayer.loadinit( process.env.PUBLIC_URL + this.props.soundtrack.file, 0)
   }
 
-  UNSAFE_componentWillUpdate = ( nextProps ) => {
-    if(nextProps.playing !== this.props.playing && this.props.playing === false && this.props.currentSongTime === 0 && nextProps.current === this.props.current) {
+  getSnapshotBeforeUpdate = ( prevProps, prevState ) => {
+    if(this.props.playing !== prevProps.playing && prevProps.playing === false && prevProps.currentSongTime === 0 && this.props.current === prevProps.current) {
+      this.loadSid(prevProps.soundtrack.file, prevProps.subtune)
+      setTimeout(() => {
+        let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
+        prevProps.getFileInfo( fileInfo )
+      }, 100)
+      this.start(this.props.subtune)
+      prevProps.startTimer()
+    }
+
+    if(this.props.playing !== prevProps.playing && prevProps.playing === false && prevProps.currentSongTime === 0 && this.props.current === !prevProps.current) {
+      this.stop()
+      this.loadSid(this.props.soundtrack.file, this.props.subtune)
+      setTimeout(() => {
+        let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
+        this.props.getFileInfo( fileInfo )
+      }, 100)
+      this.start(this.props.subtune)
+      this.props.startTimer()
+
+    }
+
+    if(this.props.current === prevProps.current && this.props.playing !== prevProps.playing && prevProps.playing === true) {
+      this.pause()
+      this.props.pauseTimer()
+    }
+
+    if(this.props.current === prevProps.current && this.props.playing === true && prevProps.playing === false && this.props.pause === false && prevProps.pause === true) {
+      this.play()
+      this.props.resumeTimer()
+    }
+
+    if(this.props.current !== prevProps.current && this.props.currentSongTime === 0) {
+      this.stop()
       this.loadSid(this.props.soundtrack.file, this.props.subtune)
       setTimeout(() => {
         let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
@@ -44,44 +77,66 @@ class Player extends Component {
       this.props.startTimer()
     }
 
-    if(nextProps.playing !== this.props.playing && this.props.playing === false && this.props.currentSongTime === 0 && nextProps.current === !this.props.current) {
-      this.stop()
-      this.loadSid(nextProps.soundtrack.file, nextProps.subtune)
-      setTimeout(() => {
-        let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
-        this.props.getFileInfo( fileInfo )
-      }, 100)
-      this.start(nextProps.subtune)
-      this.props.startTimer()
-
-    }
-
-    if(nextProps.current === this.props.current && nextProps.playing !== this.props.playing && this.props.playing === true) {
-      this.pause()
-      this.props.pauseTimer()
-    }
-
-    if(nextProps.current === this.props.current && nextProps.playing === true && this.props.playing === false && nextProps.pause === false && this.props.pause === true) {
-      this.play()
-      this.props.resumeTimer()
-    }
-
-    if(nextProps.current !== this.props.current && nextProps.currentSongTime === 0) {
-      this.stop()
-      this.loadSid(nextProps.soundtrack.file, nextProps.subtune)
-      setTimeout(() => {
-        let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
-        this.props.getFileInfo( fileInfo )
-      }, 100)
-      this.start(nextProps.subtune)
-      this.props.startTimer()
-    }
-
-    if(nextProps.currentSongTotalTime === this.props.currentSongTime) {
+    if(this.props.currentSongTotalTime === prevProps.currentSongTime) {
       this.stop()
       this.props.playNextSong()
       this.props.startTimer()
     }
+
+    return null
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if(this.props.playing !== prevProps.playing && prevProps.playing === false && prevProps.currentSongTime === 0 && this.props.current === prevProps.current) {
+      this.loadSid(prevProps.soundtrack.file, prevProps.subtune)
+      setTimeout(() => {
+        let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
+        prevProps.getFileInfo( fileInfo )
+      }, 100)
+      this.start(this.props.subtune)
+      prevProps.startTimer()
+    }
+
+    if(this.props.playing !== prevProps.playing && prevProps.playing === false && prevProps.currentSongTime === 0 && this.props.current === !prevProps.current) {
+      this.stop()
+      this.loadSid(this.props.soundtrack.file, this.props.subtune)
+      setTimeout(() => {
+        let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
+        this.props.getFileInfo( fileInfo )
+      }, 100)
+      this.start(this.props.subtune)
+      this.props.startTimer()
+
+    }
+
+    if(this.props.current === prevProps.current && this.props.playing !== prevProps.playing && prevProps.playing === true) {
+      this.pause()
+      this.props.pauseTimer()
+    }
+
+    if(this.props.current === prevProps.current && this.props.playing === true && prevProps.playing === false && this.props.pause === false && prevProps.pause === true) {
+      this.play()
+      this.props.resumeTimer()
+    }
+
+    if(this.props.current !== prevProps.current && this.props.currentSongTime === 0) {
+      this.stop()
+      this.loadSid(this.props.soundtrack.file, this.props.subtune)
+      setTimeout(() => {
+        let fileInfo = {SidTitle: this.getSIDTitle(), SidAuthor: this.getSIDAuthor(), SidInfomation: this.getSIDInfo()}
+        this.props.getFileInfo( fileInfo )
+      }, 100)
+      this.start(this.props.subtune)
+      this.props.startTimer()
+    }
+
+    if(this.props.currentSongTotalTime === prevProps.currentSongTime) {
+      this.stop()
+      this.props.playNextSong()
+      this.props.startTimer()
+    }
+
+    return null
   }
 
   componentWillUnmount = () => {
