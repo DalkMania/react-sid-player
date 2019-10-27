@@ -6,7 +6,7 @@ import { createBrowserHistory } from 'history'
 import rootReducer from '../reducers'
 
 export const history = createBrowserHistory({
-  basename: process.env.PUBLIC_URL
+  basename: '/react-sid-player'
 })
 
 const initialState = {}
