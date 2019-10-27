@@ -1,13 +1,27 @@
 {
-  "main.css": "static/css/main.7d2ac763.css",
-  "main.css.map": "static/css/main.7d2ac763.css.map",
-  "main.js": "static/js/main.d6480c17.js",
-  "main.js.map": "static/js/main.d6480c17.js.map",
-  "static/media/body-background.jpg": "static/media/body-background.6c862c3f.jpg",
-  "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
-  "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
-  "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
-  "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
-  "static/media/ln2-cover.jpg": "static/media/ln2-cover.4ff90d4c.jpg"
+  "files": {
+    "main.css": "/react-sid-player/static/css/main.f3a0b4b3.chunk.css",
+    "main.js": "/react-sid-player/static/js/main.e81d1939.chunk.js",
+    "main.js.map": "/react-sid-player/static/js/main.e81d1939.chunk.js.map",
+    "runtime~main.js": "/react-sid-player/static/js/runtime~main.82997534.js",
+    "runtime~main.js.map": "/react-sid-player/static/js/runtime~main.82997534.js.map",
+    "static/css/2.764ccc25.chunk.css": "/react-sid-player/static/css/2.764ccc25.chunk.css",
+    "static/js/2.7b532a75.chunk.js": "/react-sid-player/static/js/2.7b532a75.chunk.js",
+    "static/js/2.7b532a75.chunk.js.map": "/react-sid-player/static/js/2.7b532a75.chunk.js.map",
+    "index.html": "/react-sid-player/index.html",
+    "precache-manifest.d4b9805d15ef3961ceb3eb1663d84e52.js": "/react-sid-player/precache-manifest.d4b9805d15ef3961ceb3eb1663d84e52.js",
+    "service-worker.js": "/react-sid-player/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/react-sid-player/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.f3a0b4b3.chunk.css.map": "/react-sid-player/static/css/main.f3a0b4b3.chunk.css.map",
+    "static/media/bars-solid.b3f49afd.svg": "/react-sid-player/static/media/bars-solid.b3f49afd.svg",
+    "static/media/app.css": "/react-sid-player/static/media/body-background.6c862c3f.jpg",
+    "static/media/ln1_cover.jpg": "/react-sid-player/static/media/ln1_cover.16ba26b9.jpg",
+    "static/media/ln2_cover.jpg": "/react-sid-player/static/media/ln2_cover.4ff90d4c.jpg",
+    "static/media/ln3_cover.jpg": "/react-sid-player/static/media/ln3_cover.15905d93.jpg",
+    "static/media/lnrmx_cover.jpg": "/react-sid-player/static/media/lnrmx_cover.2ea4b80f.jpg",
+    "static/media/pause-solid.93c1a16b.svg": "/react-sid-player/static/media/pause-solid.93c1a16b.svg",
+    "static/media/play-solid.f79fe6ae.svg": "/react-sid-player/static/media/play-solid.f79fe6ae.svg",
+    "static/media/step-backward-solid.2d81914f.svg": "/react-sid-player/static/media/step-backward-solid.2d81914f.svg",
+    "static/media/step-forward-solid.d34f2bf4.svg": "/react-sid-player/static/media/step-forward-solid.d34f2bf4.svg"
+  }
 }
