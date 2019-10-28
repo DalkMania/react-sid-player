@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3743a6ea6a4a24d25f8a1e937ea76198",
+    "revision": "c2ae9d0324d59df7a0d2851b7809f700",
     "url": "/react-sid-player/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-sid-player/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "1fcf9c36f6b998201dc8",
+    "revision": "b076eb20a0a313761935",
     "url": "/react-sid-player/static/css/main.f3a0b4b3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-sid-player/static/js/2.7b532a75.chunk.js"
   },
   {
-    "revision": "1fcf9c36f6b998201dc8",
-    "url": "/react-sid-player/static/js/main.afb7e444.chunk.js"
+    "revision": "b076eb20a0a313761935",
+    "url": "/react-sid-player/static/js/main.69c3da91.chunk.js"
   },
   {
     "revision": "926123b4a7ed873c5f48",
