@@ -21,7 +21,7 @@ import { ReactComponent as Forward } from '../../assets/svg/step-forward-solid.s
 import { ReactComponent as Backward } from '../../assets/svg/step-backward-solid.svg'
 import { ReactComponent as Bars } from '../../assets/svg/bars-solid.svg'
 
-import PlayList from '../Playlist'
+import PlayList from '../playlist'
 import '../../assets/css/player.css'
 
 

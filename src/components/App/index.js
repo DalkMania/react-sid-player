@@ -6,7 +6,7 @@ import Home from '../Home'
 import Footer from '../Footer'
 import NotFound from '../NotFound'
 import About from '../About'
-import Player from '../../containers/Player'
+import Player from '../../containers/player'
 import '../../assets/css/app.css'
 
 WebFont.load({
