@@ -2,14 +2,14 @@ import React from 'react'
 import { Route, Link } from 'react-router-dom'
 
 const OldSchoolMenuLink = ({ label, to, activeOnlyWhenExact }) => (
-  <Route path={to} exact={activeOnlyWhenExact} children={({ match }) => (
-      <Link className={match ? 'active' : ''} to={to}>{label}</Link>
-  )}/>
-)
+   <Route path={to} exact={activeOnlyWhenExact} children={({ match }) => (
+       <Link className={match ? 'active' : ''} to={to}>{label}</Link>
+   )}/>
+ )
 
-const Header = () => {
-  return (
-    <div className="site-header">
+const SiteHeader = () => {
+   return (
+    <header className="site-header">
       <p className="title">React SID Player</p>
       <nav className="site-navigation">
         <ul>
@@ -21,8 +21,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </div>
-  )
+    </header>
+   ) 
 }
 
-export default Header
+export default SiteHeader;
+

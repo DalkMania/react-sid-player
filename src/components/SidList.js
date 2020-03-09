@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ln1_cover from '../../assets/images/ln1_cover.jpg'
-import ln2_cover from '../../assets/images/ln2_cover.jpg'
-import ln3_cover from '../../assets/images/ln3_cover.jpg'
-import lnrmx_cover from '../../assets/images/lnrmx_cover.jpg'
+import ln1_cover from '../assets/images/ln1_cover.jpg'
+import ln2_cover from '../assets/images/ln2_cover.jpg'
+import ln3_cover from '../assets/images/ln3_cover.jpg'
+import lnrmx_cover from '../assets/images/lnrmx_cover.jpg'
 
 
-const Home = () => {
+const SidList = () => {
   return (
     <ul className="sid-list">
         <li>
@@ -33,4 +33,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default SidList

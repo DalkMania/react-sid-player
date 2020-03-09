@@ -34,6 +34,13 @@ body {
     box-shadow: 0px 3px 10px -10px rgba(34,34,34,1);
     z-index: 1;
   }
+
+  .site-content {
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   p.title {
     margin:0;
@@ -72,7 +79,6 @@ body {
     background:rgba(1,1,1, 0.6);
     padding:4rem 2rem;
     width:70%;
-    margin:7rem auto 0;
     color: #FFF;
     -webkit-box-shadow: 0px 3px 10px -10px rgba(34,34,34,1);
     -moz-box-shadow: 0px 3px 10px -10px rgba(34,34,34,1);
