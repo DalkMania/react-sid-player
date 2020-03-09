@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom"
+import { createBrowserHistory } from 'history'
 import WebFont from 'webfontloader'
 import { GlobalProvider } from '../context/GlobalState'
 import SiteHeader from './SiteHeader'
@@ -15,6 +16,10 @@ import NotFound from './NotFound'
 
 import '../assets/css/app.css'
 
+export const history = createBrowserHistory({
+  basename: '/react-sid-player'
+})
+
 WebFont.load({
   google: {
     families: ['Lato:300', 'sans-serif']
@@ -25,7 +30,7 @@ const App = () => {
 
   return (
     <GlobalProvider>
-      <Router basename="/">
+      <Router history={history}>
         <SiteHeader />
         <main className="site-content">
           <Switch>
