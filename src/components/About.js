@@ -15,7 +15,8 @@ export default () => (
      The design of the player was designed by: Drew Vosburg, and can be found here
      ( <a href="http://codepen.io/drewvosburg/pen/YyvwJY">http://codepen.io/drewvosburg/pen/YyvwJY</a> ).
      The jsSID ( JavaScript SID Emulator ) used was created by: <a href="http://hermit.sidrip.com">Mihaly Horvath</a>.</p>
-     <p>The music is from one of my favorite C64 games, "The Last Ninja 2", created by: <a href="http://www.system3.com">System 3</a> back
-      in 1988. The lovely chiptunes were composed by: <a href="https://www.facebook.com/MattGrayC64">Matt Gray</a>.</p>
+     <p>The music is from one of my favorite C64 game series, "The Last Ninja", created by: <a href="http://www.system3.com">System 3</a> back in the late 1980 - 1990s.</p>
+     <p>The lovely chiptunes were composed by:</p> 
+     <p><a href="https://en.wikipedia.org/wiki/Ben_Daglish">Ben Daglish</a> and <a href="https://c64audio.com/blogs/news/anthony-lees-an-obituary">Anthony Lees</a> (Last Ninja 1). <a href="https://www.facebook.com/MattGrayC64">Matt Gray</a> (Last Ninja 2). <a href="http://www.reyn.net/">Reyn Ouwehand</a>  (Last Ninja 3 and Ninja Remix).</p>
   </div>
 )
