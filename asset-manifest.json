@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-sid-player/static/css/main.6ffb5c53.chunk.css",
-    "main.js": "/react-sid-player/static/js/main.047f3fef.chunk.js",
-    "main.js.map": "/react-sid-player/static/js/main.047f3fef.chunk.js.map",
+    "main.js": "/react-sid-player/static/js/main.31d4cc0a.chunk.js",
+    "main.js.map": "/react-sid-player/static/js/main.31d4cc0a.chunk.js.map",
     "runtime-main.js": "/react-sid-player/static/js/runtime-main.30a4afe0.js",
     "runtime-main.js.map": "/react-sid-player/static/js/runtime-main.30a4afe0.js.map",
     "static/css/2.764ccc25.chunk.css": "/react-sid-player/static/css/2.764ccc25.chunk.css",
     "static/js/2.b75d5e0f.chunk.js": "/react-sid-player/static/js/2.b75d5e0f.chunk.js",
     "static/js/2.b75d5e0f.chunk.js.map": "/react-sid-player/static/js/2.b75d5e0f.chunk.js.map",
     "index.html": "/react-sid-player/index.html",
-    "precache-manifest.dac2272346dabbea78cdfbfe9680b7fa.js": "/react-sid-player/precache-manifest.dac2272346dabbea78cdfbfe9680b7fa.js",
+    "precache-manifest.a52bb6e1370da089906c09c2651af701.js": "/react-sid-player/precache-manifest.a52bb6e1370da089906c09c2651af701.js",
     "service-worker.js": "/react-sid-player/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/react-sid-player/static/css/2.764ccc25.chunk.css.map",
     "static/css/main.6ffb5c53.chunk.css.map": "/react-sid-player/static/css/main.6ffb5c53.chunk.css.map",
@@ -30,6 +30,6 @@
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.b75d5e0f.chunk.js",
     "static/css/main.6ffb5c53.chunk.css",
-    "static/js/main.047f3fef.chunk.js"
+    "static/js/main.31d4cc0a.chunk.js"
   ]
 }
