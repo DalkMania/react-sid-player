@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6abf52760f17b36a1b319490808c0c7c",
+    "revision": "99404fddcfbf3e1f09722d3b72449a67",
     "url": "/react-sid-player/index.html"
   },
   {
