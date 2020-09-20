@@ -1,0 +1,68 @@
+ol#playlist {
+    list-style-type: none;
+    margin-left: 0;
+    width: 400px;
+    padding-left: 0;
+    position: absolute;
+    height: 300px;
+    background-color: #fff;
+    margin: 0;
+    font-size: 16px;
+    top: 50px;
+    overflow-y: auto;
+    -webkit-transition: 0s box-shadow 0.3s, -webkit-transform 0.4s ease-in-out;
+    transition: 0s box-shadow 0.3s, -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, 0s box-shadow 0.3s;
+    transition: transform 0.4s ease-in-out, 0s box-shadow 0.3s, -webkit-transform 0.4s ease-in-out;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  ol#playlist > li {
+    counter-increment: customlistcounter;
+    padding: 12px 15px;
+    height: 50px;
+    position: relative;
+    cursor:pointer;
+  }
+  ol#playlist > li:after {
+    position: absolute;
+    width: 300px;
+    left: 9.5%;
+    content: '';
+    display: block;
+    bottom: 0;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+  }
+  ol#playlist > li:last-child:after {
+    border-color: transparent;
+  }
+  ol#playlist > li:hover {
+    background-color: rgba(34, 34, 34, 0.02);
+  }
+  ol#playlist > li.playing {
+    background-color: rgba(79, 182, 236, 0.15);
+  }
+  ol#playlist > li.playing:after {
+    border-color: transparent;
+  }
+  ol#playlist > li.playing:hover {
+    background-color: rgba(79, 182, 236, 0.2);
+  }
+  
+  ol#playlist > li:before {
+    content: counter(customlistcounter) " ";
+    float: left;
+    text-align: right;
+    width: 1em;
+    margin-right: 1em;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.3;
+    vertical-align: baseline;
+    display: inline-block;
+  }
+  
+  ol#playlist li:first-child {
+    counter-reset: customlistcounter;
+  }
+  

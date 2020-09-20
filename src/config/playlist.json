@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "album": "The Last Ninja",
+    "file": "/assets/sids/Last_Ninja_1.sid",
+    "poster": "/assets/images/ln1_cover.jpg",
+    "songs": [
+      {
+        "id": 0,
+        "title": "The Wastelands Loader",
+        "length": "04:29",
+        "subtune": 2
+      },
+      {
+        "id": 1,
+        "title": "The Wastelands",
+        "length": "05:40",
+        "subtune": 5
+      },
+      {
+        "id": 2,
+        "title": "The Wilderness Loader",
+        "length": "05:06",
+        "subtune": 0
+      },
+      {
+        "id": 3,
+        "title": "The Wilderness",
+        "length": "05:34",
+        "subtune": 6
+      },
+      {
+        "id": 4,
+        "title": "Palace Gardens Loader",
+        "length": "03:59",
+        "subtune": 1
+      },
+      {
+        "id": 5,
+        "title": "Palace Gardens",
+        "length": "06:10",
+        "subtune": 7
+      },
+      {
+        "id": 6,
+        "title": "The Dungeons Loader",
+        "length": "03:48",
+        "subtune": 10
+      },
+      {
+        "id": 7,
+        "title": "The Dungeons",
+        "length": "05:05",
+        "subtune": 8
+      },
+      {
+        "id": 8,
+        "title": "The Palace Loader",
+        "length": "03:49",
+        "subtune": 3
+      },
+      {
+        "id": 9,
+        "title": "The Palace",
+        "length": "04:38",
+        "subtune": 9
+      },
+      {
+        "id": 10,
+        "title": "The Inner Sanctum Loader",
+        "length": "06:17",
+        "subtune": 4
+      },
+      {
+        "id": 11,
+        "title": "The Inner Sanctum",
+        "length": "07:55",
+        "subtune": 10
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "album": "Last Ninja 2",
+    "file": "/assets/sids/Last_Ninja_2.sid",
+    "poster": "/assets/images/ln2_cover.jpg",
+    "songs": [
+      {
+        "id": 0,
+        "title": "Central Park Loader",
+        "length": "04:29",
+        "subtune": 0
+      },
+      {
+        "id": 1,
+        "title": "Central Park",
+        "length": "05:40",       
+        "subtune": 1
+      },
+      {
+        "id": 2,
+        "title": "The Street Loader",
+        "length": "05:06",
+        "subtune": 2
+      },
+      {
+        "id": 3,
+        "title": "The Street",
+        "length": "05:34",
+        "subtune": 3
+      },
+      {
+        "id": 4,
+        "title": "The Sewers Loader",
+        "length": "03:59",
+        "subtune": 4
+      },
+      {
+        "id": 5,
+        "title": "The Sewers",
+        "length": "06:10",
+        "subtune": 5
+      },
+      {
+        "id": 6,
+        "title": "The Basement Loader",
+        "length": "03:48",
+        "subtune": 6
+      },
+      {
+        "id": 7,
+        "title": "The Basement",
+        "length": "05:05",
+        "subtune": 7
+      },
+      {
+        "id": 8,
+        "title": "The Office Loader",
+        "length": "03:49",
+        "subtune": 8
+      },
+      {
+        "id": 9,
+        "title": "The Office",
+        "length": "04:38",
+        "subtune": 9
+      },
+      {
+        "id": 10,
+        "title": "The Mansion Loader",
+        "length": "06:17",
+        "subtune": 10
+      },
+      {
+        "id": 11,
+        "title": "The Mansion",
+        "length": "07:55",
+        "subtune": 11
+      },
+      {
+        "id": 12,
+        "title": "The Final Battle Loader",
+        "length": "03:33",
+        "subtune": 12
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "album": "The Last Ninja 3",
+    "file": "/assets/sids/Last_Ninja_3.sid",
+    "poster": "/assets/images/ln3_cover.jpg",
+    "songs": [
+      {
+        "id": 0,
+        "title": "Intro Tune",
+        "length": "04:47",
+        "subtune": 2
+      },
+      {
+        "id": 1,
+        "title": "Level 1 - Earth",
+        "length": "02:52",
+        "subtune": 3
+      },
+      {
+        "id": 2,
+        "title": "Level 2 - Wind",
+        "length": "04:05",
+        "subtune": 4
+      },
+      {
+        "id": 3,
+        "title": "Level 3 - Water",
+        "length": "04:19",
+        "subtune": 5
+      },
+      {
+        "id": 4,
+        "title": "Level 4 - Fire",
+        "length": "03:13",
+        "subtune": 6
+      },
+      {
+        "id": 5,
+        "title": "Level 5 - Void",
+        "length": "03:13",
+        "subtune": 7
+      },
+      {
+        "id": 6,
+        "title": "End Sequence",
+        "length": "02:50",
+        "subtune": 9
+      },
+      {
+        "id": 7,
+        "title": "Game Over",
+        "length": "00:38",
+        "subtune": 8
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "album": "The Last Ninja Remix",
+    "file": "/assets/sids/Last_Ninja_Remix.sid",
+    "poster": "/assets/images/lnrmx_cover.jpg",
+    "songs": [
+      {
+        "id": 0,
+        "title": "Intro - The Dungeons",
+        "length": "05:31",
+        "subtune": 0
+      },
+      {
+        "id": 1,
+        "title": "Central Park - The Wastelands",
+        "length": "03:29",
+        "subtune": 1
+      },
+      {
+        "id": 2,
+        "title": "The Street - Central Park",
+        "length": "04:20",
+        "subtune": 2
+      },
+      {
+        "id": 3,
+        "title": "The Sewers - Merry Christmas, Mr.​Lawrence",
+        "length": "04:19",
+        "subtune": 3
+      },
+      {
+        "id": 4,
+        "title": "The Basement - The Wastelands",
+        "length": "03:01",
+        "subtune": 4
+      },
+      {
+        "id": 5,
+        "title": "The Office - The Wastelands",
+        "length": "02:00",
+        "subtune": 5
+      },
+      {
+        "id": 6,
+        "title": "The Mansion & The Final Battle",
+        "length": "03:15",
+        "subtune": 6
+      }
+    ]
+  }
+]
