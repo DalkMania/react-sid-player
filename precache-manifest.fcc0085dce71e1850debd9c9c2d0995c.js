@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59726b4273b82d95a11cc6d1dfbe0224",
+    "revision": "6abf52760f17b36a1b319490808c0c7c",
     "url": "/react-sid-player/index.html"
   },
   {
-    "revision": "c30c057ce455e0ac04df",
+    "revision": "68684566f0a887e7d94a",
     "url": "/react-sid-player/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "80aab67772c12175803e",
-    "url": "/react-sid-player/static/css/main.6ffb5c53.chunk.css"
+    "revision": "54f7a82128485bf56c02",
+    "url": "/react-sid-player/static/css/main.bfba919c.chunk.css"
   },
   {
-    "revision": "c30c057ce455e0ac04df",
-    "url": "/react-sid-player/static/js/2.b75d5e0f.chunk.js"
+    "revision": "68684566f0a887e7d94a",
+    "url": "/react-sid-player/static/js/2.146b30c5.chunk.js"
   },
   {
-    "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
-    "url": "/react-sid-player/static/js/2.b75d5e0f.chunk.js.LICENSE.txt"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/react-sid-player/static/js/2.146b30c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80aab67772c12175803e",
-    "url": "/react-sid-player/static/js/main.31d4cc0a.chunk.js"
+    "revision": "54f7a82128485bf56c02",
+    "url": "/react-sid-player/static/js/main.be8cda30.chunk.js"
   },
   {
-    "revision": "27bac1aa22287edc8633",
-    "url": "/react-sid-player/static/js/runtime-main.30a4afe0.js"
+    "revision": "f66d919b8f2f2631802b",
+    "url": "/react-sid-player/static/js/runtime-main.76e2bcec.js"
   },
   {
     "revision": "b3f49afdaa769bc2cb267d590e308ae0",

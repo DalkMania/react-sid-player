@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-sid-player/static/css/main.6ffb5c53.chunk.css",
-    "main.js": "/react-sid-player/static/js/main.31d4cc0a.chunk.js",
-    "main.js.map": "/react-sid-player/static/js/main.31d4cc0a.chunk.js.map",
-    "runtime-main.js": "/react-sid-player/static/js/runtime-main.30a4afe0.js",
-    "runtime-main.js.map": "/react-sid-player/static/js/runtime-main.30a4afe0.js.map",
+    "main.css": "/react-sid-player/static/css/main.bfba919c.chunk.css",
+    "main.js": "/react-sid-player/static/js/main.be8cda30.chunk.js",
+    "main.js.map": "/react-sid-player/static/js/main.be8cda30.chunk.js.map",
+    "runtime-main.js": "/react-sid-player/static/js/runtime-main.76e2bcec.js",
+    "runtime-main.js.map": "/react-sid-player/static/js/runtime-main.76e2bcec.js.map",
     "static/css/2.764ccc25.chunk.css": "/react-sid-player/static/css/2.764ccc25.chunk.css",
-    "static/js/2.b75d5e0f.chunk.js": "/react-sid-player/static/js/2.b75d5e0f.chunk.js",
-    "static/js/2.b75d5e0f.chunk.js.map": "/react-sid-player/static/js/2.b75d5e0f.chunk.js.map",
+    "static/js/2.146b30c5.chunk.js": "/react-sid-player/static/js/2.146b30c5.chunk.js",
+    "static/js/2.146b30c5.chunk.js.map": "/react-sid-player/static/js/2.146b30c5.chunk.js.map",
     "index.html": "/react-sid-player/index.html",
-    "precache-manifest.a52bb6e1370da089906c09c2651af701.js": "/react-sid-player/precache-manifest.a52bb6e1370da089906c09c2651af701.js",
+    "precache-manifest.fcc0085dce71e1850debd9c9c2d0995c.js": "/react-sid-player/precache-manifest.fcc0085dce71e1850debd9c9c2d0995c.js",
     "service-worker.js": "/react-sid-player/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/react-sid-player/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.6ffb5c53.chunk.css.map": "/react-sid-player/static/css/main.6ffb5c53.chunk.css.map",
-    "static/js/2.b75d5e0f.chunk.js.LICENSE.txt": "/react-sid-player/static/js/2.b75d5e0f.chunk.js.LICENSE.txt",
+    "static/css/main.bfba919c.chunk.css.map": "/react-sid-player/static/css/main.bfba919c.chunk.css.map",
+    "static/js/2.146b30c5.chunk.js.LICENSE.txt": "/react-sid-player/static/js/2.146b30c5.chunk.js.LICENSE.txt",
     "static/media/bars-solid.b3f49afd.svg": "/react-sid-player/static/media/bars-solid.b3f49afd.svg",
     "static/media/app.css": "/react-sid-player/static/media/body-background.6c862c3f.jpg",
     "static/media/ln1_cover.jpg": "/react-sid-player/static/media/ln1_cover.16ba26b9.jpg",
@@ -26,10 +26,10 @@
     "static/media/step-forward-solid.d34f2bf4.svg": "/react-sid-player/static/media/step-forward-solid.d34f2bf4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.30a4afe0.js",
+    "static/js/runtime-main.76e2bcec.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.b75d5e0f.chunk.js",
-    "static/css/main.6ffb5c53.chunk.css",
-    "static/js/main.31d4cc0a.chunk.js"
+    "static/js/2.146b30c5.chunk.js",
+    "static/css/main.bfba919c.chunk.css",
+    "static/js/main.be8cda30.chunk.js"
   ]
 }
