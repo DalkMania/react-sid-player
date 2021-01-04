@@ -1,6 +1,6 @@
 import { toSeconds } from '../helpers'
 
-export default (state, action) => {
+const AppReducer = (state, action) => {
   switch (action.type) {
     case 'SHOW_PLAYLIST':
       return {
@@ -129,3 +129,5 @@ export default (state, action) => {
         return state;
     }
   }
+
+  export default AppReducer

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => (
+const About = () => (
   <div className="container">
     <h1>About This Demo</h1>
     <p>SID (short for Sound Interface Device) is the name of the sound
@@ -20,3 +20,5 @@ export default () => (
      <p><a href="https://en.wikipedia.org/wiki/Ben_Daglish">Ben Daglish</a> and <a href="https://c64audio.com/blogs/news/anthony-lees-an-obituary">Anthony Lees</a> (Last Ninja 1). <a href="https://www.facebook.com/MattGrayC64">Matt Gray</a> (Last Ninja 2). <a href="http://www.reyn.net/">Reyn Ouwehand</a>  (Last Ninja 3 and Ninja Remix).</p>
   </div>
 )
+
+export default About
