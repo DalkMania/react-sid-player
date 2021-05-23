@@ -6,12 +6,12 @@
     "runtime-main.js": "/react-sid-player/static/js/runtime-main.58ec1dca.js",
     "runtime-main.js.map": "/react-sid-player/static/js/runtime-main.58ec1dca.js.map",
     "static/css/2.679831fc.chunk.css": "/react-sid-player/static/css/2.679831fc.chunk.css",
-    "static/js/2.ea3ae47d.chunk.js": "/react-sid-player/static/js/2.ea3ae47d.chunk.js",
-    "static/js/2.ea3ae47d.chunk.js.map": "/react-sid-player/static/js/2.ea3ae47d.chunk.js.map",
+    "static/js/2.5ffdccf0.chunk.js": "/react-sid-player/static/js/2.5ffdccf0.chunk.js",
+    "static/js/2.5ffdccf0.chunk.js.map": "/react-sid-player/static/js/2.5ffdccf0.chunk.js.map",
     "index.html": "/react-sid-player/index.html",
     "static/css/2.679831fc.chunk.css.map": "/react-sid-player/static/css/2.679831fc.chunk.css.map",
     "static/css/main.c2bc3d88.chunk.css.map": "/react-sid-player/static/css/main.c2bc3d88.chunk.css.map",
-    "static/js/2.ea3ae47d.chunk.js.LICENSE.txt": "/react-sid-player/static/js/2.ea3ae47d.chunk.js.LICENSE.txt",
+    "static/js/2.5ffdccf0.chunk.js.LICENSE.txt": "/react-sid-player/static/js/2.5ffdccf0.chunk.js.LICENSE.txt",
     "static/media/bars-solid.e8db7520.svg": "/react-sid-player/static/media/bars-solid.e8db7520.svg",
     "static/media/app.css": "/react-sid-player/static/media/body-background.c5ddad69.jpg",
     "static/media/ln1_cover.9a76d5a3.jpg": "/react-sid-player/static/media/ln1_cover.9a76d5a3.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.58ec1dca.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.ea3ae47d.chunk.js",
+    "static/js/2.5ffdccf0.chunk.js",
     "static/css/main.c2bc3d88.chunk.css",
     "static/js/main.5e4710cb.chunk.js"
   ]
