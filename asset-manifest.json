@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-sid-player/static/css/main.cd4352c7.css",
-    "main.js": "/react-sid-player/static/js/main.e996e223.js",
+    "main.js": "/react-sid-player/static/js/main.559c2e6e.js",
     "static/media/ln2_cover.jpg": "/react-sid-player/static/media/ln2_cover.651cfa84013817e4776b.jpg",
     "static/media/ln3_cover.jpg": "/react-sid-player/static/media/ln3_cover.5cfd42b15849a3c6c018.jpg",
     "static/media/lnrmx_cover.jpg": "/react-sid-player/static/media/lnrmx_cover.d060f689499d5f99e1d2.jpg",
@@ -14,10 +14,10 @@
     "static/media/step-forward-solid.svg": "/react-sid-player/static/media/step-forward-solid.f82d1c9a3412cc9bfbe98580a31c3f64.svg",
     "static/media/play-solid.svg": "/react-sid-player/static/media/play-solid.3c7578b0bb8f6f5b7ce93977efc73570.svg",
     "main.cd4352c7.css.map": "/react-sid-player/static/css/main.cd4352c7.css.map",
-    "main.e996e223.js.map": "/react-sid-player/static/js/main.e996e223.js.map"
+    "main.559c2e6e.js.map": "/react-sid-player/static/js/main.559c2e6e.js.map"
   },
   "entrypoints": [
     "static/css/main.cd4352c7.css",
-    "static/js/main.e996e223.js"
+    "static/js/main.559c2e6e.js"
   ]
 }
